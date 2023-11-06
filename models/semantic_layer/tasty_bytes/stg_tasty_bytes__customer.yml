@@ -1,0 +1,28 @@
+version: 2
+
+semantic_models:
+  - name: customer
+    model: ref('stg_tasty_bytes__customer')
+    description: '{{ doc("tasty_bytes__customer") }}'
+    
+    entities:
+      - name: customer
+        expr: customer_id
+        type: primary
+
+    dimensions:
+      - name: city_name
+        description: '{{ doc("tasty_bytes__city_name") }}'
+        type: categorical
+      - name: country_name
+        description: '{{ doc("tasty_bytes__country_name") }}'
+        type: categorical
+      - name: postal_code
+        description: '{{ doc("tasty_bytes__postal_code") }}'
+        type: categorical
+      - name: preferred_language
+        description: '{{ doc("tasty_bytes__preferred_language") }}'
+        type: categorical
+      - name: gender
+        description: '{{ doc("tasty_bytes__gender") }}'
+        type: categorical

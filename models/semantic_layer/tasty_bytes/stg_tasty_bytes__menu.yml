@@ -1,0 +1,19 @@
+version: 2
+
+semantic_models:
+  - name: menu
+    model: ref('stg_tasty_bytes__menu')
+    description: '{{ doc("tasty_bytes__menu") }}'
+    
+    entities:
+      - name: menu
+        expr: menu_item_id
+        type: primary
+
+    dimensions:
+      - name: menu_item_name
+        description: '{{ doc("tasty_bytes__menu_item_name") }}'
+        type: categorical
+      - name: item_category
+        description: '{{ doc("tasty_bytes__item_category") }}'
+        type: categorical

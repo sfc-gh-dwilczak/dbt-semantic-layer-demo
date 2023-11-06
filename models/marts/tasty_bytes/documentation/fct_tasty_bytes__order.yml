@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: fct_tasty_bytes__order
+    description:  "{{ doc('tasty_bytes__order') }}"
+    columns:
+      - name: order_detail_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__order_detail_id') }}"
+
+      - name: order_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__order_id') }}"
+
+      - name: customer_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__customer_id') }}"
+
+      - name: menu_item_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__menu_item_id') }}"
+
+      - name: location_id
+        data_type: float
+        description: "{{ doc('tasty_bytes__location_id') }}"
+
+      - name: truck_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__truck_id') }}"
+
+      - name: ordered_at
+        data_type: timestamp_ntz
+        description: "{{ doc('tasty_bytes__ordered_at') }}"
+
+      - name: quantity
+        data_type: number
+        description: "{{ doc('tasty_bytes__quantity') }}"
+
+      - name: price
+        data_type: number
+        description: "{{ doc('tasty_bytes__price') }}"

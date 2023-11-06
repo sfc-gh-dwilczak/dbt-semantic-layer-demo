@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: stg_tasty_bytes__truck
+    description: "{{ doc('tasty_bytes__truck') }}"
     
     columns:
       - name: truck_id

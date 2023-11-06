@@ -12,7 +12,7 @@ with
             shift_start_time,
             shift_end_time,
             order_channel,
-            order_ts as ordered_at,
+            order_ts  as ordered_at,
             served_ts as served_at,
             order_currency,
             order_amount,

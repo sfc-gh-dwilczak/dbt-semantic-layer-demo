@@ -1,0 +1,42 @@
+version: 2
+
+semantic_models:
+  - name: order_detail
+    model: ref('stg_tasty_bytes__order_detail')
+
+    entities:
+      - name: order_detail
+        expr: order_detail_id
+        type: primary
+
+    dimensions:
+      - name: ordered_on
+        expr: ordered_at::date
+        type: time
+        type_params:
+          time_granularity: day
+
+    defaults:
+      agg_time_dimension: ordered_on
+
+    measures:
+      - name: item_quantity
+        agg: sum
+        expr: quantity
+
+      - name: gross_revenue
+        agg: sum
+        expr: price
+
+metrics:
+  - name: item_quantity
+    label: item quantity
+    type: simple
+    type_params:
+      measure: item_quantity
+
+  - name: gross_revenue
+    label: gross revenue
+    type: simple
+    type_params:
+      measure: gross_revenue
