@@ -1,8 +1,9 @@
 version: 2
 
 semantic_models:
-  - name: order_detail
-    model: ref('stg_tasty_bytes__order_detail')
+  - name: order
+    model: ref('fct_tasty_bytes__order')
+    description: "{{ doc('tasty_bytes__order') }}"
 
     entities:
       - name: order_detail
