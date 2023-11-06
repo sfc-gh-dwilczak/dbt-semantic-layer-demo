@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: stg_tasty_bytes__order_detail
+    
+    columns:
+      - name: order_detail_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__order_detail_id') }}"
+        constraints:
+          - type: not_null
+        tests:
+          - unique
+
+      - name: order_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__order_id') }}"
+        constraints:
+          - type: not_null
+
+      - name: menu_item_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__menu_item_id') }}"
+        constraints:
+          - type: not_null
+
+      - name: discount_id
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__discount_id') }}"
+
+      - name: line_number
+        data_type: number
+        description: "{{ doc('tasty_bytes__line_number') }}"
+
+      - name: quantity
+        data_type: number
+        description: "{{ doc('tasty_bytes__quantity') }}"
+
+      - name: unit_price
+        data_type: number
+        description: "{{ doc('tasty_bytes__unit_price') }}"
+
+      - name: price
+        data_type: number
+        description: "{{ doc('tasty_bytes__price') }}"
+
+      - name: order_item_discount_amount
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__order_item_discount_amount') }}"

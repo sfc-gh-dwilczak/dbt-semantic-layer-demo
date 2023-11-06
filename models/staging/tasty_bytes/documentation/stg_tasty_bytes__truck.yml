@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: stg_tasty_bytes__truck
+    
+    columns:
+      - name: truck_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__truck_id') }}"
+        constraints:
+          - type: not_null
+        tests:
+          - unique
+
+      - name: menu_type_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__menu_type_id') }}"
+
+      - name: primary_city
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__primary_city') }}"
+
+      - name: country_region_name
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__country_region_name') }}"
+
+      - name: country_region_iso_code
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__country_region_iso_code') }}"
+
+      - name: country_name
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__country_name') }}"
+
+      - name: country_iso_code
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__country_iso_code') }}"
+
+      - name: franchise_flag
+        data_type: number
+        description: "{{ doc('tasty_bytes__franchise_flag') }}"
+
+      - name: truck_year
+        data_type: number
+        description: "{{ doc('tasty_bytes__truck_year') }}"
+
+      - name: truck_make
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__truck_make') }}"
+
+      - name: truck_model
+        data_type: varchar
+        description: "{{ doc('tasty_bytes__truck_model') }}"
+
+      - name: ev_flag
+        data_type: number
+        description: "{{ doc('tasty_bytes__ev_flag') }}"
+
+      - name: franchise_id
+        data_type: number
+        description: "{{ doc('tasty_bytes__franchise_id') }}"
+
+      - name: truck_opening_date
+        data_type: date
+        description: "{{ doc('tasty_bytes__truck_opening_date') }}"
