@@ -10,6 +10,22 @@ semantic_models:
         expr: order_detail_id
         type: primary
 
+      - name: customer
+        expr: customer_id
+        type: foreign
+
+      - name: menu
+        expr: menu_item_id
+        type: foreign
+
+      - name: location
+        expr: location_id
+        type: foreign
+
+      - name: truck
+        expr: truck_id
+        type: foreign
+
     dimensions:
       - name: ordered_on
         expr: ordered_at::date
