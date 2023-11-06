@@ -6,9 +6,9 @@ with
             franchise_id,
             first_name,
             last_name,
-            city as city_name,
+            city    as city_name,
             country as country_name,
-            e_mail as email,
+            e_mail  as email,
             phone_number
         from
             source
