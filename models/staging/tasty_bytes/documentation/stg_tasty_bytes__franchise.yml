@@ -1,7 +1,8 @@
 version: 2
 
 models:
-  - name: stg_tasty_bytes__franchise    
+  - name: stg_tasty_bytes__franchise
+    description: "{{ doc('tasty_bytes__franchise') }}"
     columns:
       - name: franchise_id
         data_type: number

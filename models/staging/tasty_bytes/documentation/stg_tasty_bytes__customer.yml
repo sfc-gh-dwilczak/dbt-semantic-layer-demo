@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_tasty_bytes__customer
-
+    description: '{{ doc("tasty_bytes__customer") }}'
     columns:
       - name: customer_id
         data_type: number

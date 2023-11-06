@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_tasty_bytes__order_header
-    
+    description: "{{ doc('tasty_bytes__order_header') }}"
     columns:
       - name: order_id
         data_type: number

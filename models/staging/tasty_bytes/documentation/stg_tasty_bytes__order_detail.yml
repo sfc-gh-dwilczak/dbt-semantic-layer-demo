@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: stg_tasty_bytes__order_detail
+    description: "{{ doc('tasty_bytes__order_detail') }}"
     
     columns:
       - name: order_detail_id

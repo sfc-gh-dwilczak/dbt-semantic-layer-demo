@@ -1,0 +1,19 @@
+version: 2
+
+semantic_models:
+  - name: location
+    model: ref('stg_tasty_bytes__location')
+    description: '{{ doc("tasty_bytes__location") }}'
+    
+    entities:
+      - name: location
+        expr: location_id
+        type: primary
+
+    dimensions:
+      - name: city_name
+        description: '{{ doc("tasty_bytes__city_name") }}'
+        type: categorical
+      - name: location_name
+        description: '{{ doc("tasty_bytes__location_name") }}'
+        type: categorical

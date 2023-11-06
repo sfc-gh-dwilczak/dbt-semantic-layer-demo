@@ -1,3 +1,31 @@
+{% docs tasty_bytes__order_header %}
+Single order from a customer.
+{% enddocs %}
+
+{% docs tasty_bytes__order_detail %}
+Details within each order.
+{% enddocs %}
+
+{% docs tasty_bytes__franchise %}
+Franchise table for dimensional franchise related information.
+{% enddocs %}
+
+{% docs tasty_bytes__truck %}
+Truck table for dimensional truck related information.
+{% enddocs %}
+
+{% docs tasty_bytes__menu %}
+Menu table for dimensional menu related information.
+{% enddocs %}
+
+{% docs tasty_bytes__location %}
+Location table for dimensional location related information.
+{% enddocs %}
+
+{% docs tasty_bytes__customer %}
+Customers table for dimensional customer related information.
+{% enddocs %}
+
 {% docs tasty_bytes__city_id %}
 Primary key for a city.
 {% enddocs %}

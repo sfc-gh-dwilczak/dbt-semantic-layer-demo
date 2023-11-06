@@ -1,0 +1,19 @@
+version: 2
+
+semantic_models:
+  - name: truck
+    model: ref('stg_tasty_bytes__truck')
+    description: '{{ doc("tasty_bytes__truck") }}'
+    
+    entities:
+      - name: truck
+        expr: truck_id
+        type: primary
+
+    dimensions:
+      - name: primary_city
+        description: '{{ doc("tasty_bytes__primary_city") }}'
+        type: categorical
+      - name: track_make
+        description: '{{ doc("tasty_bytes__truck_make") }}' 
+        type: categorical

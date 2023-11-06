@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_tasty_bytes__city
-    
+  
     columns:
       - name: city_id
         data_type: number
